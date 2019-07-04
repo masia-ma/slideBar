@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.sliderBar-wrapper {
+  width: 800px;
+  cursor: pointer;
+}
+.sliderBar-wrapper .sliderBar-container {
+  position: relative;
+  height: 20px;
+  width: 100%;
+}
+.sliderBar-wrapper .sliderBar-container .entire-bar
+, .sliderBar-wrapper .sliderBar-container .action-bar {
+  position: absolute;
+  top: 6px;
+  height: 8px;
+  border-radius: 3px;
+  left: 0;
+}
+.sliderBar-wrapper .sliderBar-container .action-bar {
+  width: 50px;
+}
+.sliderBar-wrapper .sliderBar-container .entire-bar {
+  /* 背景色可变 */
+  background: #d3d3d3; 
+  width: 100%;
+}
+.sliderBar-wrapper .sliderBar-container .action-bar {
+  /* 背景色可变 */
+  background: #ee7c34;
+}
+.sliderBar-wrapper .sliderBar-container .action-block {
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 12px;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #ee7c34;
+}
+.sliderBar-wrapper .sliderBar-container .action-block:before
+,.sliderBar-wrapper .sliderBar-container .action-block:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ee7c34;
+  content: '';
+  display: block;
+}
+.sliderBar-wrapper .sliderBar-container .action-block:before {
+  top: 30%;
+}
+.sliderBar-wrapper .sliderBar-container .action-block:after {
+  bottom: 30%;
+}
+.sliderBar-wrapper .sliderBar-scale {
+  position: relative;
+  height: 30px;
+}
